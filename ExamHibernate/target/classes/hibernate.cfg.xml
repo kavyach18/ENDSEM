@@ -1,0 +1,21 @@
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+        <property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/jfsdexam</property>
+        
+       
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.connection.password">Bhavya@123</property>
+        <property name="hibernate.hbm2ddl.auto">update</property>
+        <property name="show_sql">true</property>
+
+        <!-- Entity Mappings -->
+        <mapping class="com.klef.jfsd.exam.Animal"/>
+        <mapping class="com.klef.jfsd.exam.Dog"/>
+        <mapping class="com.klef.jfsd.exam.Cat"/>
+        <mapping class="ExamQuery.Customer"/>
+         <mapping class="ExamQuery.Department"/>
+        
+    </session-factory>
+</hibernate-configuration>
